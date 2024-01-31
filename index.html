@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch & Timer</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="all">
+        <div class="container">
+            <div class="allTimer d-none">
+
+                <div class="Timer">
+                    <svg>
+                        <circle cx="70" cy="70" r="70" id="circle"></circle>
+                        <circle cx="70" cy="70" r="70" id="circle1"></circle>
+                    </svg>
+                    <div class="timeIndex">
+                        <span class="text hh">00 :</span>
+                        <span class="text mm">&nbsp;00 :</span>
+                        <span class="text ss">&nbsp;00</span>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button id="startTimer" class="m-2">Play</button>
+                    <button id="resetTimer" class="m-2">Reset</button>
+                </div>
+                <div class="time d-flex my-3">
+                    <input type="text" class="form-control hours m-2" id="inputHours" placeholder="Hours">
+                    <input type="text" class="form-control minute m-2" id="inputMinutes" placeholder="Minutes">
+                    <input type="text" class="form-control second m-2" id="inputSeconds" placeholder="Seconds">
+                </div>
+
+            </div>
+
+          
+            <div class="StopWatch d-none justify-content-center align-items-center flex-column">
+                <div class="outerCircle">
+
+                    <div class="innerCircle">
+                        <span class="text minute">00 :</span>
+                        <span class="text sec">&nbsp;00 :</span>
+                        <span class="text msec">&nbsp;00</span>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button class="rest hidden">Reset</button>
+                    <button class="play">Play</button>
+                    <button class="lap hidden">Lap</button>
+                </div>
+                <ul class="laps">
+
+                    <button class="lapClearBtn d-none">Clear All</button>
+                </ul>
+            </div>
+            <div class="TimeOut vh-100 d-flex justify-content-center align-items-center">
+                <div class="">
+                 <h2 class="TimeOuttxt d-none justify-content-center my-5">Time Out</h2>
+                 <div class="timeOutBtn  d-flex justify-content-center align-items-center">
+                     <button id="" class="m-2 stopWatchBtn">Stopwatch</button>
+                     <button id="" class="m-2 TimerBtn">Timer</button>
+                 </div>
+                </div>
+         </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
